@@ -1,0 +1,13 @@
+   <div>
+   Crap
+
+
+   <%=  object.name %>
+
+
+   <%= form_with controller: @fav_item do |f| %>
+        <% @fav_Item.create(object.attributes) %>
+        <%= f.submit "Create", :class => "btn" %>
+    <% end %>
+
+</div>
